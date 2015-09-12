@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  when: 2015-09-12 17:02:44
+  who: MyString
+  where: MyString
+  size: MyString
+  express: false
+
+two:
+  when: 2015-09-12 17:02:44
+  who: MyString
+  where: MyString
+  size: MyString
+  express: false
