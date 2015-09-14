@@ -4,12 +4,11 @@ describe "PickupTest" do
 
   def setup
     @pickup = Pickup.new
-    # @pickup.valid?
+    @pickup.valid?
   end
-  describe "Validations" do
 
+  describe "Validations" do
     it "validates when" do
-      @pickup.valid?
       refute_empty @pickup.errors[:when]
     end
 
