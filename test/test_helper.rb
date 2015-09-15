@@ -5,6 +5,7 @@ require 'minitest/spec'
 require "minitest/reporters"
 Minitest::Reporters.use!
 Minitest::Reporters::DefaultReporter
+MiniTest::Spec.register_spec_type( /Controller$/, ControllerSpec )
 
 class ActiveSupport::TestCase
   ActiveRecord::Migration.check_pending!
@@ -20,4 +21,7 @@ class ActiveSupport::TestCase
   register_spec_type self do |desc|
     desc < ActiveSupport::Base if desc.is_a? Class
   end
+
+  include Devise::TestHelpers
 end
+
